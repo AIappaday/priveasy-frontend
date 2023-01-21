@@ -1,26 +1,28 @@
 import './App.css';
+import { useState } from 'react';
 
 function App() {
+  const [question, setQuestion] = useState('');
+
+  const onQuestionSubmit = function (e) {
+    console.log(question);
+    // Call API with question
+  };
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src="Octocat.png" className="App-logo" alt="logo" />
-        <p>
-          GitHub Codespaces <span className="heart">♥️</span> React
-        </p>
-        <p className="small">
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </p>
+        <form onSubmit={onQuestionSubmit}>
+          <label>
+            Type in Your Question:
+            <br/>
+            <input type="text"
+                   name="question" 
+                   value={question}
+                   onChange={(e) => setQuestion(e.target.value)}/>
+          </label>
+          <input type="submit" value="Submit" />
+        </form>
       </header>
     </div>
   );
