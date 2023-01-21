@@ -6,12 +6,14 @@ function App() {
 
   const onQuestionSubmit = function (e) {
     console.log(question);
+    e.preventDefaault();
     // Call API with question
   };
 
   return (
     <div className="App">
       <header className="App-header">
+        <h1>PrivEasy</h1>
         <form onSubmit={onQuestionSubmit}>
           <label>
             Type in Your Question:
