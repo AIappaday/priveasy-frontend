@@ -1,5 +1,7 @@
 # GitHub Codespaces ♥️ React
 
+Visit https://haonchon.github.io/priveasy-frontend/
+
 ## Sourabh's notes
 
 - FYI I used [this tutorial](https://github.com/gitname/react-gh-pages) for figuring out how to get this website deployed on github pages
