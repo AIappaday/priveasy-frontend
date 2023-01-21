@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/priveasy/static/css/main.f87db60f.css",
-    "main.js": "/priveasy/static/js/main.b6171ed6.js",
-    "static/js/496.0320d045.chunk.js": "/priveasy/static/js/496.0320d045.chunk.js",
-    "index.html": "/priveasy/index.html",
-    "main.f87db60f.css.map": "/priveasy/static/css/main.f87db60f.css.map",
-    "main.b6171ed6.js.map": "/priveasy/static/js/main.b6171ed6.js.map",
-    "496.0320d045.chunk.js.map": "/priveasy/static/js/496.0320d045.chunk.js.map"
+    "main.css": "/priveasy-frontend/static/css/main.f87db60f.css",
+    "main.js": "/priveasy-frontend/static/js/main.290201d3.js",
+    "static/js/496.0320d045.chunk.js": "/priveasy-frontend/static/js/496.0320d045.chunk.js",
+    "index.html": "/priveasy-frontend/index.html",
+    "main.f87db60f.css.map": "/priveasy-frontend/static/css/main.f87db60f.css.map",
+    "main.290201d3.js.map": "/priveasy-frontend/static/js/main.290201d3.js.map",
+    "496.0320d045.chunk.js.map": "/priveasy-frontend/static/js/496.0320d045.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f87db60f.css",
-    "static/js/main.b6171ed6.js"
+    "static/js/main.290201d3.js"
   ]
 }
