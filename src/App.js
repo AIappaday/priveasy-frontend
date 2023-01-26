@@ -56,46 +56,30 @@ class App extends Component {
     //   }
     // })
     if(this.state.sarcasm === true){
-      // eslint-disable-next-line
-      const workflow = await fetch("https://prometheus-api.llm.llc/api/workflow/DOJiRGoWyFQ3J8QJRNyl", {
-        body: JSON.stringify({'apiKey': '5b99ed99-462a-4a84-a234-aeb36935e39c', 'args': [ `${this.state.question}` ], 'kwargs': {
-        "URL" : `${this.state.policyURL}`,
-      }}),
-        headers: {
-          "Content-Type": "application/json"
-        },
-        method: "POST"
-      }).then((response) => {
-        // console.log("response.json(): ", response.json());
-        return response.json();
-      }).then((data) => {
-        // let keys = Object.keys(data.executionTrace);
-        console.log("data: ", data.outputs[0])
-        // console.log("data: ", data.executionTrace[keys[2]].output, data.outputs[0]);
-        this.setState({output: data.outputs[0], loading: false});
-        return data;
-      });
-    } else {
-       // eslint-disable-next-line
-       const workflow = await fetch("https://prometheus-api.llm.llc/api/workflow/i4Sai2CZLOpepYLbhuUi", {
-        body: JSON.stringify({'apiKey': '5b99ed99-462a-4a84-a234-aeb36935e39c', 'args': [ `${this.state.question}` ], 'kwargs': {
-        "URL" : `${this.state.policyURL}`,
-      }}),
-        headers: {
-          "Content-Type": "application/json"
-        },
-        method: "POST"
-      }).then((response) => {
-        // console.log("response.json(): ", response.json());
-        return response.json();
-      }).then((data) => {
-        // let keys = Object.keys(data.executionTrace);
-        console.log("data: ", data.outputs[0])
-        // console.log("data: ", data.executionTrace[keys[2]].output, data.outputs[0]);
-        this.setState({output: data.outputs[0], loading: false});
-        return data;
-      });
+      
     }
+    // eslint-disable-next-line
+    const workflow = await fetch(`https://qwcgkuazdgqloxgo5mtie2h6oq0jrvbc.lambda-url.us-west-2.on.aws/?nsfw=${this.state.sarcasm}`, {
+      body: JSON.stringify({'apiKey': '5b99ed99-462a-4a84-a234-aeb36935e39c', 'args': [ `${this.state.question}` ], 'kwargs': {
+      "URL" : `${this.state.policyURL}`,
+    }}),
+      headers: {
+        "Content-Type": "application/json"
+      },
+      method: "POST"
+    }).then((response) => {
+      // console.log("response.json(): ", response.json());
+      return response.json();
+    }).then((data) => {
+      // let keys = Object.keys(data.executionTrace);
+      console.log("data: ", data.outputs[0])
+      // console.log("data: ", data.executionTrace[keys[2]].output, data.outputs[0]);
+      this.setState({output: data.outputs[0], loading: false});
+      return data;
+    })
+    .catch((err) => {
+      this.setState({output: 'Error! Please try again :(', loading: false});
+    });
     
   }
 
