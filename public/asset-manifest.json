@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/priveasy-frontend/static/css/main.5724c8d7.css",
+    "main.js": "/priveasy-frontend/static/js/main.19489208.js",
+    "static/js/496.0320d045.chunk.js": "/priveasy-frontend/static/js/496.0320d045.chunk.js",
+    "index.html": "/priveasy-frontend/index.html",
+    "main.5724c8d7.css.map": "/priveasy-frontend/static/css/main.5724c8d7.css.map",
+    "main.19489208.js.map": "/priveasy-frontend/static/js/main.19489208.js.map",
+    "496.0320d045.chunk.js.map": "/priveasy-frontend/static/js/496.0320d045.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5724c8d7.css",
+    "static/js/main.19489208.js"
+  ]
+}
