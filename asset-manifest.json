@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.5724c8d7.css",
-    "main.js": "/static/js/main.5cd5baa9.js",
-    "static/js/496.0320d045.chunk.js": "/static/js/496.0320d045.chunk.js",
-    "index.html": "/index.html",
-    "main.5724c8d7.css.map": "/static/css/main.5724c8d7.css.map",
-    "main.5cd5baa9.js.map": "/static/js/main.5cd5baa9.js.map",
-    "496.0320d045.chunk.js.map": "/static/js/496.0320d045.chunk.js.map"
+    "main.css": "/priveasy-frontend/static/css/main.08a25be0.css",
+    "main.js": "/priveasy-frontend/static/js/main.1ad77abc.js",
+    "static/js/496.0320d045.chunk.js": "/priveasy-frontend/static/js/496.0320d045.chunk.js",
+    "index.html": "/priveasy-frontend/index.html",
+    "main.08a25be0.css.map": "/priveasy-frontend/static/css/main.08a25be0.css.map",
+    "main.1ad77abc.js.map": "/priveasy-frontend/static/js/main.1ad77abc.js.map",
+    "496.0320d045.chunk.js.map": "/priveasy-frontend/static/js/496.0320d045.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5724c8d7.css",
-    "static/js/main.5cd5baa9.js"
+    "static/css/main.08a25be0.css",
+    "static/js/main.1ad77abc.js"
   ]
 }
