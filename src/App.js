@@ -43,7 +43,7 @@ class App extends Component {
     this.setState({ loading: true });
     //eslint-disable-next-line
     const workflow = await fetch(`https://qwcgkuazdgqloxgo5mtie2h6oq0jrvbc.lambda-url.us-west-2.on.aws/?nsfw=${this.state.sarcasm}`, {
-      body: JSON.stringify({'apiKey': '5b99ed99-462a-4a84-a234-aeb36935e39c', 'args': [ `${this.state.question}` ], 'kwargs': {
+      body: JSON.stringify({'args': [ `${this.state.question}` ], 'kwargs': {
       "URL" : `${this.state.policyURL}`,
     }}),
       headers: {
