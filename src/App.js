@@ -42,23 +42,6 @@ class App extends Component {
     e.preventDefault();
     this.setState({ loading: true });
     //eslint-disable-next-line
-    // const workflow = await fetch('https://prometheus-api.llm.llc/api/workflow/QqRqhvr5kRqFD2waSLUF',
-    // {
-    //   method: 'POST',
-    //   headers: {
-    //     'Content-Type': 'application/json',
-    //     'accept': 'application/json',
-    //   },
-    //   body: {
-    //     'apiKey': "d3cab356-2ceb-4a22-9273-8f9f5857a2a4",
-    //     'args': [this.state.question],
-    //     'kwargs': {}
-    //   }
-    // })
-    if(this.state.sarcasm === true){
-      
-    }
-    // eslint-disable-next-line
     const workflow = await fetch(`https://qwcgkuazdgqloxgo5mtie2h6oq0jrvbc.lambda-url.us-west-2.on.aws/?nsfw=${this.state.sarcasm}`, {
       body: JSON.stringify({'apiKey': '5b99ed99-462a-4a84-a234-aeb36935e39c', 'args': [ `${this.state.question}` ], 'kwargs': {
       "URL" : `${this.state.policyURL}`,
@@ -68,12 +51,9 @@ class App extends Component {
       },
       method: "POST"
     }).then((response) => {
-      // console.log("response.json(): ", response.json());
       return response.json();
     }).then((data) => {
-      // let keys = Object.keys(data.executionTrace);
       console.log("data: ", data.outputs[0])
-      // console.log("data: ", data.executionTrace[keys[2]].output, data.outputs[0]);
       this.setState({output: data.outputs[0], loading: false});
       return data;
     })
