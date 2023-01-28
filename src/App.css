@@ -77,3 +77,13 @@
 .form{
   position: fixed;
 }
+
+.disclaimer {
+  position: fixed;
+  bottom: 3%;
+  left: 0%;
+  /* transform: translate(-50%, -50%); */
+  font-size: xx-small;
+  margin: 0 2% 0;
+  color: white;
+}
