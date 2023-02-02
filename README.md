@@ -1,10 +1,12 @@
 # GitHub Codespaces ♥️ React
 
-Visit https://haonchon.github.io/priveasy-frontend/
+Visit https://priveasy.app/
 
 ## Sourabh's notes
 
-- FYI I used [this tutorial](https://github.com/gitname/react-gh-pages) for figuring out how to get this website deployed on github pages
+- FYI I used [this tutorial](https://github.com/gitname/react-gh-pages) for figuring out how to get this website deployed on github pages.
+- To deploy changes in the future, commit your changes to the `main` branch (optional but recommended first step), and then run `npm run deploy`
+- I also used [this YouTube video](https://www.youtube.com/watch?v=rKz6kIW4Uos) to figure out how to setup the domain routing to link the GH pages site to our custom Google Domains domain (priveasy.app).
 
 Welcome to your shiny new Codespace running React! We've got everything fired up and running for you to explore React.
 
