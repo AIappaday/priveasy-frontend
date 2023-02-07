@@ -75,7 +75,7 @@ class App extends Component {
           <label>
             <div className='question'>Type in Your Question:</div>
             <div className='inputs'>
-            <br/>Policy URL: 
+            <br/>Privacy Policy URL: 
               <input type="text"
                     name="Policy URL" 
                     value={this.state.policyURL}
