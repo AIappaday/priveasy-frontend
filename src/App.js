@@ -75,18 +75,22 @@ class App extends Component {
           <label>
             <div className='question'>Type in Your Question:</div>
             <div className='inputs'>
-            <br/>Privacy Policy URL: 
-              <input type="text"
-                    name="Policy URL" 
-                    value={this.state.policyURL}
-                    className="input"
-                    onChange={this.onChangeURL}/>
-              <br/> Question: 
-              <input type="text"
-                    name="question" 
-                    value={this.state.question}
-                    className="input"
-                    onChange={this.onChange}/>
+              <div>
+                Privacy Policy URL: 
+                <input type="text"
+                      name="Policy URL" 
+                      value={this.state.policyURL}
+                      className="input"
+                      onChange={this.onChangeURL}/>
+              </div>
+              <div>
+                Question: 
+                <input type="text"
+                      name="question" 
+                      value={this.state.question}
+                      className="input"
+                      onChange={this.onChange}/>
+              </div>
             </div>
           </label>
           <br/>
