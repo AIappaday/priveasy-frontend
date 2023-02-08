@@ -1,5 +1,4 @@
 .App {
-  flex-flow: column wrap;
   text-align: center;
   background-color: #000;
   height: 100vh;
@@ -7,7 +6,6 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-  text-shadow: 0 0 1px #fff, 0 0 3px #fcee09;
   display: flex;
 }
 
@@ -17,9 +15,7 @@
 }
 
 .App-header {
-  width: 100%;
-  position: absolute;
-  top: 0%;
+  
 }
 
 .App-link {
@@ -35,7 +31,10 @@
 }
 
 .inputs{
-
+  position: fixed;
+  top: 23%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .input {
@@ -43,33 +42,46 @@
 }
 
 .title {
-
+  position: fixed;
+  top: 1%;
+  left: 7%
 }
 
 .question {
+  position: fixed;
+  top: 16%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .card {
   margin: 0 1rem 3rem 1rem;
   white-space: pre-wrap;
+  position: relative;
 }
 
 .sarcasm{
-  font-style: italic;
-  font-size: xx-small;
+  font-size: small;
 }
 
 .submit {
-
+  position: fixed;
+  grid-template-columns: 0.5fr 1.5fr 1fr;
+  display: grid;
+  top: 33%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .form{
-
+  position: fixed;
 }
 
 .disclaimer {
-  position: absolute;
-  bottom: 2%;
+  position: fixed;
+  bottom: 3%;
+  left: 0%;
+  /* transform: translate(-50%, -50%); */
   font-size: xx-small;
   margin: 0 2% 0;
   color: white;

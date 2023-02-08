@@ -73,10 +73,9 @@ class App extends Component {
         <div className='card'>{output}</div>
         <div className='form' onSubmit={this.onQuestionSubmit.bind(this)}>
           <label>
-            <div className='question'>Type in Your Question:</div>
             <div className='inputs'>
               <div>
-                Privacy Policy URL: 
+                Privacy Policy URL: &nbsp;
                 <input type="text"
                       name="Policy URL" 
                       value={this.state.policyURL}
@@ -84,7 +83,7 @@ class App extends Component {
                       onChange={this.onChangeURL}/>
               </div>
               <div>
-                Question: 
+                Question: &nbsp;
                 <input type="text"
                       name="question" 
                       value={this.state.question}
@@ -96,7 +95,8 @@ class App extends Component {
           <br/>
           <div className='submit'>
             <input type="checkbox" name="sarcasm" onClick={this.handleOnChange.bind(this)}/>
-            <p className='sarcasm'>(NSFW)</p>
+            <div className='sarcasm'>(NSFW) &emsp; &emsp; &emsp; &emsp;
+            </div>
             <input type="submit" value="Submit" onClick={this.runQuery.bind(this)} />
           </div>
         </div>
